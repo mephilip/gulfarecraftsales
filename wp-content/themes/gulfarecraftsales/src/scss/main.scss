@@ -1,0 +1,89 @@
+@import
+	'utilities/settings.scss',
+	'foundation/foundation';
+body,
+html {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/***
+ * Centered Div
+ *
+ * Centers a div with `align="center"]` as an attribute.
+ *
+ * html:
+ *	<div align="center">This div is centered!</div>
+ */
+div[align="center"] {
+	display: table;
+	margin: 0 auto;
+}
+
+div.flex {
+	display: flex;
+	justify-content: center;
+	> div {
+		flex: 1 0 auto;
+	}
+}
+
+.container {
+	width: $container;
+	@include mq($mq-medium) {
+		width: 100%;
+	}
+}
+
+.pattern__bg {
+	background: url(../images/pattern.png);
+}
+
+.h1 span,
+.h1__lite span {
+	color: $secondary;
+}
+
+.hero__gradient {
+	background: url('../images/hero__gradient.png');
+	background-size: 75%;
+	background-repeat-y: no-repeat;
+	background-repeat: repeat-x;
+	height: 75%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	@include mq($mq-medium) {
+		background-size: cover;
+	}
+}
+
+@import
+	'utilities/colors.scss',
+	'utilities/typography.scss',
+	'utilities/globals.scss',
+	'utilities/hamburger.scss',
+	'utilities/grid.scss',
+	'components/hamburger.scss',
+	'components/offcanvas__menu.scss',
+	'sections/hero__bg.scss',
+	'sections/hero__inner.scss',
+	'sections/header__inner.scss',
+	'sections/intro.scss',
+	'sections/make__contact.scss',
+	'sections/aircraft__selector.scss',
+	'sections/aircraft__inventory.scss',
+	'sections/home__video.scss',
+	'sections/footer.scss'
+	;

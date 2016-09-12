@@ -1,0 +1,67 @@
+header.header__inner {
+	background: $black;
+	padding: $vr;
+	border-bottom: (.25 * $vr) solid $secondary;
+	@include breakpoint(medium down) {
+		padding: .75rem;
+	}
+	
+	.header__inner_wrapper {
+		.va__me {
+			display: table;
+			> div {
+				display: table-row;
+				> div {
+					display: table-cell;
+					height: 70px;
+					vertical-align: middle;
+				}
+			}
+		}
+		nav {
+			ul {
+				float: right;
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				li {
+					display: inline-block;
+					text-align: center;
+					a {
+						display: block;
+						color: white;
+						padding: .25 * $vr;
+						font-size: p;
+						&:hover {
+							color: $secondary;
+						}
+					}
+				}
+			}
+			&#header__inner__main_nav {
+				.va__me {
+					margin: 0 auto;
+				}
+				ul {
+					li {
+						display: inline-block;
+						text-align: center;
+						a {
+							display: block;
+							color: white;
+							padding: .5 * $vr;
+						}
+					}
+				}
+			}
+			&#header__inner__social_nav {
+				.va__me {
+					float: right;
+				}
+				img {
+					width: 2 * $vr;
+				}
+			}
+		}
+	}
+}

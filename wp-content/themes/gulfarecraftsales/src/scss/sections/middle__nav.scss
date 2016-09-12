@@ -1,0 +1,26 @@
+section#middle__nav {
+	background: $black;
+	width: 100%;
+	padding: $vr;
+	nav {
+		ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			li {
+				display: inline-block;
+				&:not(:last-child) {
+					padding-right: 2 * $vr;
+				}
+				a {
+					color: white;
+					text-decoration: none;
+					text-transform: uppercase;
+					&:hover {
+						color: $secondary;
+					}
+				}
+			}
+		}
+	}
+}

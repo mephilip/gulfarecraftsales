@@ -1,0 +1,34 @@
+section#intro {
+	background: url('../images/intro__bg.jpg');
+	background-size: cover;
+	div.intro__wrapper {
+		background: url('../images/pattern.png');
+		padding-top: 2 * $vr;
+		padding-bottom: 2 * $vr;
+	}
+	div.intro__text {
+		text-align: center;
+		padding-bottom: 2 * $vr;
+		.h1 {
+			color: white;
+			span {
+				color: $secondary;
+				font-style: italic;
+			}
+		}
+		p {
+			color: white;
+		}
+	}
+	div.intro__icon {
+		display: inline-block;
+		text-align: center;
+		padding: 0 $vr;
+		img	{
+			width: 130px;
+		}
+		p {
+			color: white;
+		}
+	}
+}

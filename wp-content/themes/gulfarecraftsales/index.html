@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Styleguide</title>
+  <link rel="stylesheet" href="assets/css/autoguide.css">
+</head>
+<body class="show-dev">
+  <div class="ag-global-container">
+<header class="header-main">
+  <h1 class="header-main__title">Styleguide</h1>
+<div class="header-main__controls">
+    <div class="toggle">
+      <input type="checkbox" id="showGrids" class="toggle__checkbox">
+      <label for="showGrids" class="toggle__button button--small">Show Grid</label>
+    </div>
+    <div class="toggle">
+      <input type="checkbox" id="showDev" class="toggle__checkbox" checked>
+      <label for="showDev" class="toggle__button button--small">Show Code Sections</label>
+    </div>
+  </div>
+</header>
+<nav class="ag-nav-main">
+  <ul class="ag-nav-main__list">
+<li class="ag-nav-main__item"><a class="ag-nav-main__link" href="#/colors">Colors</a></li>
+<li class="ag-nav-main__item">
+    <a href="#/centered-div" class="ag-nav-main__link">
+      Centered Div
+    </a>
+</li>
+<li class="ag-nav-main__item">
+    <a href="#/sections" class="ag-nav-main__link">
+      Sections
+    </a>
+<ul class="ag-nav-main__subnav">
+<li class="ag-nav-main__item">
+    <a href="#/sections/global-footer" class="ag-nav-main__link">
+      Global Footer
+    </a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<section id="/colors" class="ag-section ag-section--var ag-section--colors ag-section--depth-1">
+    <div class="ag-section__inner">
+<header class="ag-section__header">
+<p class="file-path">src/scss/utilities/colors.scss</p>
+<h1>Colors</h1>
+</header>
+<div class="ag-swatch ag-swatch--white ag-swatch--light" style="background-color: #fff">
+        <span class="ag-swatch__var-name">$white</span>
+        <span class="ag-swatch__value ag-swatch__value--hex">#fff</span>
+      </div>
+<div class="ag-swatch ag-swatch--black ag-swatch--dark" style="background-color: #0a0a0a">
+        <span class="ag-swatch__var-name">$black</span>
+        <span class="ag-swatch__value ag-swatch__value--hex">#0a0a0a</span>
+      </div>
+<div class="ag-swatch ag-swatch--blue ag-swatch--dark" style="background-color: #0022cc">
+        <span class="ag-swatch__var-name">$blue</span>
+        <span class="ag-swatch__value ag-swatch__value--hex">#0022cc</span>
+      </div>
+<div class="ag-swatch ag-swatch--red ag-swatch--dark" style="background-color: #cc0022">
+        <span class="ag-swatch__var-name">$red</span>
+        <span class="ag-swatch__value ag-swatch__value--hex">#cc0022</span>
+      </div>
+</div>
+  </section>
+<section id="/centered-div"
+    class="ag-section
+      ag-section--element
+      ag-section--depth-1 
+      ">
+    <div class="ag-section__inner">
+<header class="ag-section__header">
+<p class="file-path">src/scss/main.scss</p>
+<h1>Centered Div</h1>
+</header>
+<div class="ag-description"><p>Centers a div with <code>align=&quot;center&quot;]</code> as an attribute.</p>
+</div>
+</div>
+<div class="ag-section__inner">
+    <h4 class="ag-component-header">Sample</h4>
+</div>
+  <make-iframe class="ag-component ag-component--html ">
+    <div align="center">This div is centered!</div>
+  </make-iframe>
+<div class="ag-section__inner">
+<h4 class="ag-component-header dev-only">Code</h4>
+  <pre class="ag-component ag-component--code"><code>&lt;div align=&quot;center&quot;&gt;This div is centered!&lt;/div&gt;</code></pre>
+</div>
+</section>
+<section id="/sections"
+    class="ag-section
+      ag-section--element
+      ag-section--depth-1 
+      ">
+    <div class="ag-section__inner">
+<header class="ag-section__header">
+<h1>Sections</h1>
+</header>
+</div>
+<div class="ag-section__sub-elements">
+<section id="/sections/global-footer"
+    class="ag-section
+      ag-section--element
+      ag-section--depth-2 
+      ">
+    <div class="ag-section__inner">
+<header class="ag-section__header">
+<p class="file-path">src/scss/sections/footer.scss</p>
+<h2>Global Footer</h2>
+</header>
+</div>
+<div class="ag-section__inner">
+    <h4 class="ag-component-header">Normal Version</h4>
+</div>
+  <make-iframe class="ag-component ag-component--html ">
+    <footer>Some cool stuff</footer>
+  </make-iframe>
+<div class="ag-section__inner">
+    <h4 class="ag-component-header">.blue</h4>
+<div class="ag-description"><p>make this bitch blue</p>
+</div>
+</div>
+  <make-iframe class="ag-component ag-component--html ">
+    <footer class="blue">Some cool stuff</footer>
+  </make-iframe>
+<div class="ag-section__inner">
+    <h4 class="ag-component-header">.red</h4>
+<div class="ag-description"><p>make &#39;er red</p>
+</div>
+</div>
+  <make-iframe class="ag-component ag-component--html ">
+    <footer class="red">Some cool stuff</footer>
+  </make-iframe>
+<div class="ag-section__inner">
+<h4 class="ag-component-header dev-only">Code</h4>
+  <pre class="ag-component ag-component--code"><code>&lt;footer&gt;Some cool stuff&lt;/footer&gt;</code></pre>
+</div>
+</section>
+</div>
+</section>
+<footer class="footer-main">
+      <p>Created using <a href="https://github.com/jhereg00/autoguide" target="_blank">Autoguide</a>.</p>
+</footer>
+  </div>
+<script>
+    window.ag = window.ag || {};
+    window.ag.styles = ["assets/css/main.css"].concat(['assets/css/in-frame.css']);
+    window.ag.scripts = ["assets/js/autoguide.js"];
+  </script>
+  <script src="assets/js/autoguide.js"></script>
+</body>
+</html>

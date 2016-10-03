@@ -1,0 +1,38 @@
+.sidebar {
+	
+}
+
+.sidebar__box {
+	margin-bottom: $vr;
+}
+
+.sidebar__header {
+	text-transform: uppercase;
+	font-style: italic;
+	margin-bottom: $vr;
+}
+
+.sidebar__list-wrapper {
+	padding: $vr;
+	border: 1px solid $grey-dark;
+}
+
+.sidebar__list {
+	padding-left: $vr;
+	margin: 0;
+	li {
+		a {
+			display: block;
+			padding: (.25 * $vr) 0;
+			text-align: left;
+			@include mTypeset(p);
+			margin-bottom: 0;
+			color: $grey-dark;
+			transition: .2s all ease;
+			&:hover {
+				transition: .2s all ease;
+				color: $secondary;
+			}
+		}
+	}
+}

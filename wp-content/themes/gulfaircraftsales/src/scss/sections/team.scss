@@ -1,0 +1,45 @@
+.team {
+	
+}
+
+.team__member {
+	@include breakpoint(small only) {
+		margin-bottom: 4 * $vr;
+	}
+}
+
+.team--wrapper-styles .team__wrapper {
+	text-align: center;
+}
+
+.team__circle {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid $secondary;
+}
+
+.team__name--h1 {
+	@include mTypeset(h1);
+}
+
+.team__postion--h2 {
+	@include mTypeset(h2);
+	color: $secondary;
+}
+
+.team__about--p {
+	@include mTypeset(p);
+	padding-left: 4 *  $vr;
+	padding-right: 4 * $vr;
+	padding-top: $vr;
+	padding-bottom: $vr;
+}
+
+.team__email--h3,
+.team__phone--h3 {
+	@include mTypeset(h3-button);
+	color: $secondary;
+}

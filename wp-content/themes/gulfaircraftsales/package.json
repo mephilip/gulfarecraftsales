@@ -1,0 +1,59 @@
+{
+  "name": "gulfarecraftsales",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mephilip/gulfarecraftsales.git"
+  },
+  "author": "Philip Rudy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mephilip/gulfarecraftsales/issues"
+  },
+  "homepage": "https://github.com/mephilip/gulfarecraftsales#readme",
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "browserify": "^13.1.0",
+    "browserify-shim": "^3.8.12",
+    "buffer": "^4.9.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-streamify": "^1.0.2",
+    "gulp-uglify": "^2.0.0",
+    "streamify": "^0.2.6",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "foundation-sites": "^6.2.3",
+    "jquery": "^3.1.0",
+    "jquery-ui": "^1.12.0",
+    "slick-carousel": "^1.6.0",
+    "slick-carousel-browserify": "^1.6.12"
+  },
+  "browser": {
+    "jquery": "./node_modules/foundation-sites/vendor/jquery/dist/jquery.js",
+    "foundation": "./node_modules/foundation-sites/dist/foundation.js",
+    "slick-carousel-browserify": "./node_modules/slick-carousel-browserify/slick/slick.js"
+  },
+  "browserify-shim": {
+    "jquery": "$",
+    "foundation": "foundation",
+    "slick-carousel-browserify": "slick"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  }
+}

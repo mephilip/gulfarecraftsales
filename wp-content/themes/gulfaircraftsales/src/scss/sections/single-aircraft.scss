@@ -1,0 +1,55 @@
+.single {
+	
+}
+
+.single__header-wrapper {
+	border-bottom: 2px solid $grey;
+	margin-bottom: $vr;
+}
+
+.single__acf {
+	margin-bottom: 2 * $vr;
+}
+
+.single__header {
+	@include mTypeset(h1);
+	color: $secondary;
+	margin-bottom: 0 !important;
+}
+
+.single__field-label {
+	@include mTypeset(h3-button);
+	color: $secondary;
+	margin-bottom: .5 * $vr !important;
+	margin-right: .5 * $vr !important;
+	display: inline-block;
+}
+
+.button--wrapper .single__button-wrapper {
+	margin-bottom: $vr;
+	text-align: center;
+}
+
+.single__button {
+	display: block;
+	padding: (.75 * $vr) $vr;
+	background: $secondary;
+	color: white;
+	text-transform: uppercase;
+	@include mTypeset(h3-button);
+	transition: .2s all ease;
+	&:hover {
+		color: white;
+		transition: .2s all ease;
+		background: $grey-dark;
+	}
+}
+
+.single__dislaimer-wrapper {
+	p {
+		@include mTypeset(p);
+		font-style: italic;
+		margin-top: $vr;
+		margin-bottom: 0 !important;
+	}
+}

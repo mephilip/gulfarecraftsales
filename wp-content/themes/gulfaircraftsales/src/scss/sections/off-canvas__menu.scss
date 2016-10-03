@@ -1,0 +1,35 @@
+.off-canvas__menu {
+	display: table;
+	float: right;
+	margin-top: 3.2rem;
+	margin-right: 1.2rem;
+	list-style-type: none;
+	li {
+		text-align: right;
+		margin-bottom: 2.4rem;
+		a {
+			display: block;
+			@include mTypeset(h3-button);
+			color: white;
+			transition: .2s all ease;
+			&:hover {
+				transition: .2s all ease;
+				color: $secondary;
+			}
+		}
+	}
+}
+
+.off-canvas__menu_social {
+	display: table;
+	margin: 0 auto;
+	list-style-type: none; 
+	text-align: right;
+	li {
+		display: inline-block;
+		padding: .5 * $vr;
+		img {
+			width: 2.5 * $vr;
+		}
+	}
+}

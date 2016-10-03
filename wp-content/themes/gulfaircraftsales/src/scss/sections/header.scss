@@ -1,0 +1,86 @@
+.header {
+	position: relative;
+	min-height: 650px;
+}
+
+.header__hero-bg {
+	background: url('../images/hero__bg.jpg');
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+.header__hero-gradient {
+	background: linear-gradient($black, transparent);
+	position: absolute;
+	height: 100%;
+	top: 0;
+	width: 100%;
+}
+
+.header__wrapper {
+	position: absolute;
+	width: 100%;
+	padding-top: 2 * $vr;
+}
+
+.header__logo {
+	display: table;
+	margin: 0 auto;
+	text-align: center;
+	z-index: 99999;
+	@include breakpoint(small only) {
+		margin-left: 2 * $vr;
+		display: inline-block;
+	}
+	img {
+		display: inline;
+		text-align: center;
+	}
+}
+
+.header__hamburger-wrapper {
+	float: right;
+	margin-right: 2 * $vr;
+}
+
+.header__main-nav-wrapper {
+	background: $black;
+	width: 100%;
+	padding: $vr;
+	position: absolute;
+	bottom: 0;
+	@include mq($mq-small) {
+		padding: $vr 0;
+		border-top: 2px solid $black;
+		display: none;
+	}
+}
+
+.header__main-nav {
+	list-style-type: none;
+	padding: 0;
+	display: table;
+	margin: 0 auto;
+	li {
+		padding: .5 * $vr;
+		display: inline-block;
+		text-align: center;
+		@include mq($mq-small) {
+			padding: 0;
+			display: none;
+		}
+		a {
+			color: white;
+			text-decoration: none;
+			text-transform: uppercase;
+			@include mTypeset(h3-button);
+			transition: .2s all ease;
+			&:hover {
+				transition: .2s all ease;
+				color: $secondary;
+			}
+		}
+	}
+}

@@ -1,0 +1,20 @@
+.about__header-wrapper {
+	text-align: center;
+}
+
+.about__header--h1 {
+	@include mTypeset(h1);
+}
+
+.about__header--secondary {
+	color: $secondary;
+	font-style: italic;
+}
+
+.about__paragraph-wrapper {
+	text-align: center;
+}
+
+.about__paragraph {
+	@include mTypeset(p);
+}

@@ -1,0 +1,120 @@
+.inventory__type {
+	
+}
+
+.inventory__type--row-margin .row {
+	margin-bottom: 2 * $vr;
+}
+
+.inventory__header-wrapper {
+	text-align: center;
+	border: 2px solid $secondary;
+}
+
+.inventory__header {
+	text-align: center;
+	display: inline-block;
+}
+
+.inventory__header--h3 {
+	@include mTypeset(h3);
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0 !important;
+}
+
+.inventory__post {
+	border: 2px solid $grey;
+	padding: $vr;
+	@include breakpoint(small only) {
+		margin-bottom: $vr;
+	}
+}
+
+.inventory__post-title-wrapper {
+	text-align: center
+}
+
+.inventory__post-title {
+	display: inline-block;
+	margin-bottom: .5 * $vr;
+	height: 50px;
+	@include breakpoint(small only) {
+		height: auto;
+	}
+}
+
+.inventory__registration-number-wrapper {
+	text-align: center;
+	padding: (.5 * $vr) 0;
+}
+
+.inventory__registration-number {
+	border: 1px solid $secondary;
+	display: inline-block;
+	padding: .25 * $vr;
+	margin-bottom: .5 * $vr;
+}
+
+.inventory__image-wrapper {
+	position: relative;
+}
+
+.inventory__image {
+	height: 150px;
+	width: 100%;
+	@include breakpoint(small only) {
+		height: auto;
+	}
+}
+
+.inventory__Available,
+.inventory__null {
+	display: none;
+}
+.inventory__Sold {
+	position: absolute;
+	background: rgba(0,0,0,.6);
+	text-align: center;
+	box-shadow: 1px 1px 1px $black;
+	padding: $vr;
+	z-index: 999;
+	top: 0;
+	width: 100%;
+	span {
+		@include mTypeset(h3-button);
+		display: inline-block;
+		color: white;
+	}
+}
+
+.inventory__price-wrapper {
+	text-align: center;
+	padding: (.5 * $vr) 0;
+}
+
+.inventory__price {
+	@include mTypeset(h3);
+	color: $secondary;
+}
+
+.inventory__summary-wrapper {
+	padding-bottom: $vr;
+	height: 100px;
+	@include breakpoint(small only) {
+		height: auto;
+	}
+}
+
+.inventory__button-wrapper {
+	text-align: center;
+}
+
+.inventory__permalink {
+	display: inline-block;
+	padding: .5 * $vr;
+	color: white;
+	text-transform: uppercase;
+	background: $secondary;
+	@include mTypeset(h3-button);
+}

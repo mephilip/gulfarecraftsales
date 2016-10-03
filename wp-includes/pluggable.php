@@ -5,7 +5,6 @@
  *
  * @package WordPress
  */
-
 if ( !function_exists('wp_set_current_user') ) :
 /**
  * Changes the current user by ID or name.
@@ -1163,7 +1162,6 @@ function wp_redirect($location, $status = 302) {
 
 	if ( !$is_IIS && PHP_SAPI != 'cgi-fcgi' )
 		status_header($status); // This causes problems on IIS and some FastCGI setups
-
 	header("Location: $location", true, $status);
 
 	return true;
@@ -2438,5 +2436,4 @@ function wp_text_diff( $left_string, $right_string, $args = null ) {
 
 	return $r;
 }
-endif;
-
+endif;?>

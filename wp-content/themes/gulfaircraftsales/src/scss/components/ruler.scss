@@ -1,0 +1,8 @@
+.section--ruler {
+	display: table;
+	margin: 0 auto;
+	.ruler {
+		border-bottom: 2px solid $secondary;
+		width: 500px;
+	}
+}

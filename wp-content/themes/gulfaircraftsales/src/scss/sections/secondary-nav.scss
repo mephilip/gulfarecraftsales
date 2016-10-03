@@ -1,0 +1,45 @@
+.secondary-nav {
+	background: $secondary;
+	@include breakpoint(small only) {
+		display: none;
+	}
+}
+
+.secondary-nav__wrapper {
+
+}
+
+.secondary-nav__nav-wrapper {
+	
+}
+
+.secondary-nav__nav {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	list-style: none;
+	li {
+		flex: 1 0 auto;
+		justify-content: center;
+		text-align: center;
+		a {
+			display: block;
+			padding: $vr;
+			color: white;
+			text-transform: uppercase;
+			@include mTypeset(p-button);
+			transition: all .2s ease;
+			margin-bottom: 0;
+			&:hover {
+				transition: all .2s ease;
+				background: $grey-dark;
+			}
+			img {
+				width: 25px;
+				height: 25px;
+				margin-right: .25 * $vr;
+				margin-top: -3px;
+			}
+		}
+	}
+}

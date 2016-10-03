@@ -1,0 +1,156 @@
+$container: 960px;
+
+$regular: 'Raleway', sans-serif;
+$lite: 'Raleway-light', sans-serif;
+
+$black: #020202;
+$grey: #dbdbdb;
+$grey-dark:#35363b;
+$grey-alt: #f3f3f3;
+$secondary: #e79d25;
+$main: #21409a;
+$blue-light: #48b7e5;
+$text-dark: #35363b;
+
+$first-breakpoint: 980px;
+$second-breakpoint: 667px;
+$mq-medium: 'only screen and (max-width:' + ($first-breakpoint) + ')';
+$mq-small: 'only screen and (max-width:' + ($second-breakpoint) + ')';
+
+$h1: 2.2rem;
+$h2: 1.8rem;
+$h3: 1.2rem;
+$h4: 1.0rem;
+$p: 1.0rem;
+$small: .8rem;
+$vr: 1.1rem;
+
+$typesets: (
+	h1: (
+		font-size: $h1,
+		line-height: 3 * $vr,
+		font-weight: bold,
+		margin-top: 0,
+		margin-bottom: 2 * $vr,
+		margin-left: 0,
+		margin-right: 0,
+		font-family: $regular
+	),
+	h1-lite: (
+		font-size: $h1,
+		line-height: 3 * $vr,
+		font-weight: 100,
+		margin-top: 0,
+		margin-bottom: 0,
+		margin-left: 0,
+		margin-right: 0,
+		font-family: $lite
+	),
+	h2: (
+		font-size: $h2,
+		line-height: 2 * $vr,
+		font-weight: 100,
+		margin-top: 0,
+		margin-bottom: $vr,
+		margin-left: 0,
+		margin-right: 0,
+		font-family: $regular
+	),
+	h2-lite: (
+		font-size: $h2,
+		line-height: 1.5 * $vr,
+		font-weight: 100,
+		margin-top: 0,
+		margin-bottom: 1.5 * $vr,
+		margin-left: 0,
+		margin-right: 0,
+		font-family: $lite
+	),
+	h2-button: (
+		font-size: $h2,
+		line-height: $h2,
+		font-weight: 900,
+		margin-top: 0,
+		margin-bottom: 0,
+		margin-left: 0,
+		margin-right: 0,
+		font-family: $regular
+	),
+	h3: (
+		font-size: $h3,
+		line-height: 2 * $vr,
+		font-weight: bold,
+		margin-top: 0,
+		margin-bottom: $vr,
+		margin-left: 0,
+		margin-right: 0,
+		font-family: $regular
+	),
+	h3-button: (
+		font-size: $h3,
+		line-height: $h3,
+		font-weight: bold,
+		margin-top: 0,
+		margin-bottom: 0,
+		margin-left: 0,
+		margin-right: 0,
+		font-family: $regular
+	),
+	h4: (
+		font-size: $h4,
+		line-height: 2 * $vr,
+		font-weight: bold,
+		margin-top: 0,
+		margin-bottom: $vr,
+		margin-left: 0,
+		margin-right: 0,
+		font-family: $regular
+	),
+	p: (
+		font-size: $p,
+		line-height: 2 * $vr,
+		font-weight: 100,
+		margin-top: 0,
+		margin-bottom: $vr,
+		margin-left: 0,
+		margin-right: 0,
+		font-family: $regular
+	),
+	p-button: (
+		font-size: $p,
+		line-height: $p,
+		font-weight: 100,
+		margin-top: 0,
+		margin-bottom: $vr,
+		margin-left: 0,
+		margin-right: 0,
+		font-family: $regular
+	),
+	small: (
+		font-size: $small,
+		line-height: 1.5 * $vr,
+		font-weight: 100,
+		margin-top: 0,
+		margin-bottom: $vr,
+		margin-left: 0,
+		margin-right: 0,
+		font-family: $lite
+	),
+	small-button: (
+		font-size: $small,
+		line-height: $small,
+		font-weight: 100,
+		margin-top: 0,
+		margin-bottom: 0,
+		margin-left: 0,
+		margin-right: 0,
+		font-family: $lite
+	)	
+);
+
+
+@mixin mq($query) {
+	@media #{unquote($query)} {
+		@content
+	}
+}

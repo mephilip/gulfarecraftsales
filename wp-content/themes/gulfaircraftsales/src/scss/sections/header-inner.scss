@@ -1,0 +1,88 @@
+/////
+/// Header Inner
+////
+
+header.header-inner {
+	background: $black;
+	padding: $vr;
+	border-bottom: (.25 * $vr) solid $secondary;
+	@include breakpoint(medium down) {
+		padding: 1rem .75rem;
+	}
+}
+
+header.header-inner--valign-middle div.header-inner__table {
+	@include mValignMiddle(70px);
+	@include breakpoint (medium down) {
+		@include mValignMiddle(30px);
+	}
+}
+
+div.header-inner__table--right {
+	width: 100%;
+	float: right;
+}
+
+div.header-inner__wrapper {
+	
+}
+
+////
+// Main Nav
+///
+
+div.header-inner__main-nav-wrapper {
+	
+}
+
+ul.header-inner__main-nav {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	li {
+		display: inline-block;
+		flex: 1 0 auto;
+		text-align: center;
+		a {
+			display: block;
+			color: white;
+			padding: .5 * $vr;
+			text-transform: uppercase;
+			font-weight: bold;
+			transition: all .3s ease;
+			&:hover {
+				transition: all .2s ease;
+				color: $secondary;
+			}
+		}
+	}
+}
+
+////
+// Social Nav
+///
+
+div.header-inner__social-nav-wrapper {
+	
+}
+
+ul.header-inner__social-nav {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	li {
+		display: inline-block;
+		text-align: center;
+		flex: 1 0 auto;
+		img {
+			width: 2 * $vr;
+		}
+	}
+}
+
+.header-inner__hamburger {
+	@include breakpoint(small only) {
+   		margin-right: 1rem;
+   	}
+}

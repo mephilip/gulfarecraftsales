@@ -1,0 +1,128 @@
+.hero-slick {
+	
+}
+
+.hero-slick__wrapper {
+	position: relative;
+	height: 620px;
+	overflow: hidden;
+	@include breakpoint(small only) {
+		height: auto;
+	}
+}
+
+.hero-slick__gradient {
+	background: linear-gradient($black, transparent);
+	position: absolute;
+	height: 50%;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+	@include breakpoint(small only) {
+		display: none;
+	}
+}
+
+.hero-slick__overlay {
+	position: absolute;
+	top: 20%;
+	text-align: center;
+	z-index: 9999;
+	width: 60%;
+	left: 20%;
+	display: table;
+	background: rgba(0,0,0,.45);
+	@include breakpoint(small only) {
+		position: static;
+		background: $black;
+		width: 100%;
+		display: block !important;
+	}
+}
+
+.hero-slick__show-overlay {
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	z-index: 9999999;
+	span {
+		display: inline-block;
+		background: $secondary;
+		padding: .55 * $vr;
+		border-radius: 0 0 30% 30%;
+		color: white;
+		@include mTypeset(small-button);
+		text-transform: uppercase;
+	}
+	@include breakpoint(small only) {
+		display: none !important;
+	}
+}
+
+.hero-slick__overlay-wrapper {
+	padding: (2 * $vr) (6 * $vr);
+	@include breakpoint(medium only) {
+		padding: $vr;
+	}
+	@include breakpoint(small only) {
+		padding: (2 * $vr) $vr;
+	}
+}
+
+.hero-slick__header {
+	@include breakpoint(small only) {
+		@include mTypeset(h2);
+	}
+}
+
+.hero-slick__button-wrapper {
+	padding-top: $vr;
+}
+
+.hero-slick__prev,
+.hero-slick__next {
+	z-index: 9999;
+	color: white;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	transition: .3s all ease;
+	top: 49%;
+	&:hover {
+		background: rgba(0,0,0,.35);
+		transition: .2s all ease;
+	}
+	@include breakpoint(small only) {
+		bottom: 10%;
+		top: auto;
+	}
+}
+
+.hero-slick__prev {
+	position: absolute;
+	left: 5%;
+}
+.hero-slick__next {
+	position: absolute;
+	right: 5%;
+}
+
+.gallery__slick-carousel {
+	img {
+		width: 100%;
+	}
+}
+
+.hero-slick__single-image {
+	background-size: cover;
+	min-height: 620px !important;
+	@include breakpoint(small only) {
+		min-height: 175px !important;
+		background-size: 100% !important;
+		background-position: center center;
+	}
+}

@@ -1,0 +1,7 @@
+.section--rows-end {
+	.row {
+		&:not(:last-child) {
+			margin-bottom: 2 * $vr;
+		}
+	}
+}

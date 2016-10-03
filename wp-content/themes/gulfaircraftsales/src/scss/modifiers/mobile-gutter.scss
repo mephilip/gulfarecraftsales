@@ -1,0 +1,6 @@
+$dafultGutter: 0 !default;
+@mixin mMobileGutter($gutterV: $dafultGutter, $gutterH: $dafultGutter) {
+	@include breakpoint(small only) {
+		padding: $gutterV $gutterH;
+	}
+}

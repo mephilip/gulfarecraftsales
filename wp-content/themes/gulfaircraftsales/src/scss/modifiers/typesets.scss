@@ -1,0 +1,115 @@
+@mixin mTypeset($type) {
+	$type: map-get($typesets, $type);
+	font-size: map-get($type,font-size);
+	line-height: map-get($type, line-height);
+	margin-top: map-get($type, margin-top);
+	margin-bottom: map-get($type, margin-bottom);
+	margin-left: map-get($type, margin-left);
+	margin-right: map-get($type, margin-right);
+	font-family: map-get($type, font-family);
+	@if map-has-key($type, font-weight) {
+		font-weight: map-get($type, font-weight);
+	}
+}
+
+.h1--white {
+	@include mTypeset(h1);
+	color: white;
+}
+
+.h2--white {
+	@include mTypeset(h2);
+	color: white;
+}
+
+.h3--white {
+	@include mTypeset(h3);
+	color: white;
+}
+
+.h4--white {
+	@include mTypeset(h4);
+	color: white;
+}
+
+.p--white {
+	@include mTypeset(p);
+	color: white;
+}
+
+.h1--secondary {
+	@include mTypeset(h1);
+	color: $secondary;
+}
+
+.h2--secondary {
+	@include mTypeset(h2);
+	color: $secondary;
+}
+
+.h3--secondary {
+	@include mTypeset(h3);
+	color: $secondary;
+}
+
+.h4--secondary {
+	@include mTypeset(h4);
+	color: $secondary;
+}
+
+.p--secondary {
+	@include mTypeset(p);
+	color: $secondary;
+}
+
+.small--secondary {
+	@include mTypeset(small);
+	color: $secondary;
+}
+
+.h1--multicolor {
+	@include mTypeset(h1);
+	span {
+		color: $secondary;
+		font-style: italic;
+	}
+}
+
+.h2--multicolor {
+	@include mTypeset(h2);
+	span {
+		color: $secondary;
+		font-style: italic;
+	}
+}
+
+.h1--text-shadow {
+	@include mTypeset(h1);
+	color: $secondary;
+	text-shadow: 1px 1px 1px $black;
+	margin-bottom: 0;
+}
+
+.h2--text-shadow {
+	@include mTypeset(h2);
+	color: white;
+	text-shadow: 1px 1px 1px $black;
+}
+
+.h3--text-shadow {
+	@include mTypeset(h3);
+	color: white;
+	text-shadow: 1px 1px 1px $black;
+}
+
+.h4--text-shadow {
+	@include mTypeset(h4);
+	color: $secondary;
+	text-shadow: 1px 1px 1px $black;
+}
+
+.p--text-shadow {
+	@include mTypeset(p);
+	color: white;
+	text-shadow: 1px 1px 1px $black;
+}

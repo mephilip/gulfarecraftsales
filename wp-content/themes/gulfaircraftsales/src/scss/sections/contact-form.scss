@@ -1,0 +1,36 @@
+.contact-form {
+	
+}
+
+.contact-form__text-block {
+	text-align: center;
+}
+
+.contact-form--h1 {
+	margin-bottom: 0 !important;
+}
+
+.contact-form textarea,
+.contact-form__recapthca {
+	margin-bottom: 2 * $vr !important;
+}
+
+.contact-form__input-text,
+.contact-form__textarea {
+	font-style: italic;
+}
+
+.contact-form__recapthca {
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.contact-form__submit {
+	background: $secondary;
+	padding: $vr (4 * $vr);
+	color: white;
+	border: 0;
+	text-transform: uppercase;
+	@include mTypeset(h3-button);
+}

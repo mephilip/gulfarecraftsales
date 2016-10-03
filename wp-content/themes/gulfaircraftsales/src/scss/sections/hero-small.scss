@@ -1,0 +1,26 @@
+.hero-small {
+	background-size: cover;
+	@include breakpoint(small only) {
+		background: $black !important;
+	}
+}
+
+.hero-small__header-wrapper {
+	text-align: center;
+}
+
+.hero-small__pattern-wrapper {
+	@include mPatternBg();
+}
+
+.hero-small__header--h1 {
+	font-size: 1.6rem;
+	line-height: 3.2rem;
+	color: white;
+	display: inline-block;
+	text-transform: uppercase;
+	font-family: $lite;
+	margin-bottom: 0 !important;
+	font-weight: 100 !important;
+	
+}

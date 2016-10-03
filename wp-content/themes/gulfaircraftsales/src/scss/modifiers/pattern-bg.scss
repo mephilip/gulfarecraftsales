@@ -1,0 +1,7 @@
+@mixin mPatternBg() {
+	background: url('../images/pattern.png');
+}
+
+.wrapper--pattern {
+	@include mPatternBg(); 
+}

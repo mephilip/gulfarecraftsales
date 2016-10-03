@@ -1,0 +1,37 @@
+.link__button {
+	display: inline-block;
+	padding: (.5 * $vr) $vr ;
+	background: $secondary;
+	color: white;
+	text-transform: uppercase;
+	@include mTypeset(h3-button);
+	&:hover {
+		transition: .2s ease all;
+		color: white;
+		background: $grey-dark;
+	}
+}
+
+.link__button--grey-dark {
+	background: $grey-dark !important;
+	&:hover {
+		background: $black !important;
+	}
+}
+
+.link__button--box-shadow {
+	box-shadow: 2px 2px 2px $black;
+}
+
+.link__button--text-shadow {
+	text-shadow: 1px 1px 1px $black;
+}
+
+.link--full-width .link__button {
+	width: 100%;
+	text-align: center;
+}
+
+.link--margin .link__button {
+	margin-bottom: $vr;
+}

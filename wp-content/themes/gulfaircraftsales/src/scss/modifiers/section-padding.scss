@@ -1,0 +1,14 @@
+.section--padding {
+	padding-top: 3.2rem;
+	padding-bottom: 3.2rem;
+}
+
+.section--wrapper-padding .section__wrapper {
+	padding-top: 4 * $vr;
+	padding-bottom: 4 * $vr;
+	@include mMobileGutter((4 * $vr), $vr);
+}
+
+.section--alt-bg {
+	background: $grey-alt;
+}
